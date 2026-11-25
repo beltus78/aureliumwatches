@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aureliumwatches",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": false },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "aureliumwatches", "database_id": "99470737-5be7-4418-9db6-2fcef63bf9ac", "migrations_dir": "migrations" }
+  ],
+  "send_email": [{ "name": "EMAIL" }],
+  "vars": {
+    "SALES_EMAIL": "sales@aureliumwatches.com",
+    "EMAIL_FROM": "Aurelium Watches <orders@aureliumwatches.com>"
+  },
+  "observability": { "enabled": true }
+}
