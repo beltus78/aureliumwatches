@@ -21,10 +21,10 @@ Checkout by crypto (BTC, ETH, USDT, USDC) or bank wire/ACH; wholesale and contac
 | Real photos: `public/photos/<slug>-1.webp` (2, 3… for more), then list the slug and photo count in `PHOTOS` | `src/catalog.ts` |
 
 ## Cloudflare setup (one time)
-1. Domain: add `aureliumwatches.com` to Cloudflare and change the nameservers at Namecheap to the two Cloudflare gives you (it currently points to the Nova cPanel server, which only shows an empty file listing).
+1. Domain: done — zone on Cloudflare (nameservers betty/rayden.ns.cloudflare.com, set at Namecheap). Old Nova mail records were kept.
 2. Database: done — D1 `aureliumwatches` (id `99470737-5be7-4418-9db6-2fcef63bf9ac`, Eastern North America) exists with migration 0001 applied.
-3. Workers & Pages → Create → Import a repository → `beltus78/aureliumwatches`, branch `main`. Build command: none. Deploy command: `npx wrangler deploy`.
-4. Settings → Domains & Routes → add `aureliumwatches.com` and `www.aureliumwatches.com` (www redirects to the apex).
+3. Done — Worker `aureliumwatches` builds from `beltus78/aureliumwatches`, branch `main` (deploy command `npx wrangler deploy`). Every push to main publishes.
+4. Done — custom domains `aureliumwatches.com` and `www.aureliumwatches.com` (www redirects to the apex). Search Console verified, sitemap submitted.
 5. Email: Email Service → Email Sending → onboard `aureliumwatches.com` so order emails go out from orders@. Set up an inbox for sales@ (e.g. Zoho Mail Free, like Liquidation Auction Center).
 
 ## See orders and requests

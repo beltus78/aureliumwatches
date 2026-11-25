@@ -2,6 +2,11 @@
 
 Every SEO change goes here (newest first): date, what changed, why.
 
+## 2026-11-25 — Live + indexing
+- aureliumwatches.com and www connected to the Worker (www → apex 301). Nameservers moved to Cloudflare.
+- Search Console: sc-domain:aureliumwatches.com verified by DNS TXT (beltusngwese@gmail.com); /sitemap.xml submitted — Success, 44 pages discovered.
+- IndexNow: all 44 sitemap URLs submitted (HTTP 202).
+
 ## 2026-11-25 — Launch setup
 - Site built on a plain Cloudflare Worker: home, /watches, /pre-owned, /new, /brands + 9 brand pages, 16 sample /watch/<slug> pages, /wholesale, /authenticity, /how-to-pay, /shipping, /returns, /faq, /about, /contact, /canada.
 - Schema: Store (site-wide), WebSite, ItemList on listings, Product + Offer (price, condition, free shipping US/CA, return policy) on watch pages, FAQPage on /faq and /wholesale, Article on guides, BreadcrumbList everywhere.
